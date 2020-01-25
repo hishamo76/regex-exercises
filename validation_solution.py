@@ -18,7 +18,7 @@ def is_integer(string):
 
 def is_fraction(string):
     """Return True iff the string represents a valid fraction."""
-    return bool(re.search(r"^-?[0-9]+[./]0?[0-9]+$", string))
+    return bool(re.search(r"^-?[0-9]+[/](0\d+|[1-9]+\d*)$", string))
 
 
 def is_valid_date(string):
